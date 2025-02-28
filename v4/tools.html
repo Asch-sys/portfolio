@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tools & Technologies - MyPortfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">MyPortfolio</div>
+      <!-- Desktop Nav -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whatwedo.html">What We Do</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="tools.html" class="active">Tools</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Hamburger -->
+      <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="mobileNav" class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="whatwedo.html">What We Do</a>
+        <a href="projects.html">Projects</a>
+        <a href="tools.html" class="active">Tools</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    </div>
+  </header>
+
+  <!-- TOOLS (IN-DEPTH) -->
+  <main>
+    <section>
+      <div class="tools-detail-container">
+        <h2 class="page-title">Tools & Technologies</h2>
+        <p class="page-subtitle">A comprehensive list of the professional tools and technologies we use to build amazing solutions</p>
+        <ul class="tools-detail-list">
+          <li>
+            <span class="tool-name">React / Next.js</span>
+            <span class="tool-desc">Modern frameworks for building dynamic web apps.</span>
+          </li>
+          <li>
+            <span class="tool-name">Tailwind CSS</span>
+            <span class="tool-desc">Utility-first CSS framework for rapid UI development.</span>
+          </li>
+          <li>
+            <span class="tool-name">Node.js / Express</span>
+            <span class="tool-desc">Scalable server-side platform and web framework.</span>
+          </li>
+          <li>
+            <span class="tool-name">Python (Flask/FastAPI)</span>
+            <span class="tool-desc">High-level language & frameworks for data processing, ML, etc.</span>
+          </li>
+          <li>
+            <span class="tool-name">AWS / Docker / Kubernetes</span>
+            <span class="tool-desc">Cloud hosting, containerization, and orchestration solutions.</span>
+          </li>
+          <li>
+            <span class="tool-name">Solidity / Web3.js</span>
+            <span class="tool-desc">Smart contract development and EVM chain interactions.</span>
+          </li>
+          <li>
+            <span class="tool-name">Unity / Unreal Engine</span>
+            <span class="tool-desc">Game engines for creating immersive 3D experiences.</span>
+          </li>
+          <li>
+            <span class="tool-name">TensorFlow / PyTorch</span>
+            <span class="tool-desc">Machine learning frameworks for AI development.</span>
+          </li>
+          <li>
+            <span class="tool-name">Figma / Adobe XD</span>
+            <span class="tool-desc">Design tools for creating beautiful user interfaces.</span>
+          </li>
+          <li>
+            <span class="tool-name">Git / GitHub</span>
+            <span class="tool-desc">Version control and collaboration platform.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 MyPortfolio. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.43 4.83a9.2 9.2 0 0 1-2.65.73 4.67 4.67 0 0 0 2.06-2.57 9.29 9.29 0 0 1-2.95 1.13 4.64 4.64 0 0 0-3.4-1.47 4.65 4.65 0 0 0-4.65 4.65c0 .36.04.7.11 1.04a13.16 13.16 0 0 1-9.55-4.84 4.65 4.65 0 0 0 1.44 6.2 4.61 4.61 0 0 1-2.1-.58v.06a4.66 4.66 0 0 0 3.73 4.57 4.64 4.64 0 0 1-2.09.08 4.66 4.66 0 0 0 4.34 3.23A9.3 9.3 0 0 1 2 19.54a13.13 13.13 0 0 0 7.11 2.08c8.53 0 13.19-7.07 13.19-13.2 0-.2 0-.39-.01-.58a9.53 9.53 0 0 0 2.34-2.43z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5v-14a5 5 0 0 0-5-5zM8.5 19h-3v-10h3v10zm-1.5-11.27a1.73 1.73 0 1 1 1.73-1.73 1.73 1.73 0 0 1-1.73 1.73zm13 11.27h-3v-4.84c0-1.16 0-2.66-1.62-2.66-1.62 0-1.87 1.27-1.87 2.58v4.92h-3v-10h2.88v1.36h.04a3.16 3.16 0 0 1 2.84-1.56c3.04 0 3.6 2 3.6 4.59v5.61z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.06c-3.34.73-4-1.61-4-1.61-.55-1.4-1.35-1.78-1.35-1.78-1.1-.74.08-.73.08-.73 1.22.09 1.86 1.25 1.86 1.25 1.08 1.84 2.82 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.39 1.25-3.22-.13-.3-.54-1.52.12-3.16 0 0 1-.32 3.3 1.23a11.42 11.42 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.64.25 2.86.12 3.16.78.83 1.25 1.91 1.25 3.22 0 4.6-2.82 5.62-5.5 5.92.43.37.81 1.1.81 2.23v3.3c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Dribbble">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0A12 12 0 1 0 12 24 12 12 0 0 0 12 0Zm5.87 4.46a9.48 9.48 0 0 1 2.14 6.1 14.32 14.32 0 0 0-5.78-.36c-.25-.59-.52-1.18-.81-1.76 2.13-.86 3.58-2.06 4.45-3.98ZM12 2.54a9.46 9.46 0 0 1 3.14.55c-.76 1.68-2.01 2.9-3.78 3.58a44.64 44.64 0 0 0-2.96-4.27A9.56 9.56 0 0 1 12 2.54Zm-4.02.92a42.54 42.54 0 0 1 3.03 4.27c-3.36.96-6.89.97-7.02.97.76-2.41 2.47-4.38 4.4-5.24ZM2.6 12.59v-.59c.22.01 4.14 0 7.9-1.11.26.5.5 1 .72 1.53-.25.07-.51.15-.75.24A20.49 20.49 0 0 0 3 15.62a9.35 9.35 0 0 1-.4-3.03ZM12 21.46a9.46 9.46 0 0 1-6.78-2.88c1.63-2.94 4.47-4.34 7.03-5.2.56 1.53.96 3.1 1.2 4.67a33.98 33.98 0 0 0 2.62-.63A9.45 9.45 0 0 1 12 21.46Zm4.72-4.61a35.27 35.27 0 0 1-2.42.58 21.66 21.66 0 0 0-1.12-4.45c.2-.05.4-.11.6-.16 2.33-.64 4.95-.7 6.86-.66a9.53 9.53 0 0 1-3.92 4.69Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle with localStorage persistence
+    function toggleTheme() {
+      const htmlEl = document.documentElement;
+      const currentTheme = htmlEl.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      htmlEl.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    // Mobile nav toggle
+    function toggleMobileMenu() {
+      const mobileNav = document.getElementById('mobileNav');
+      mobileNav.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
