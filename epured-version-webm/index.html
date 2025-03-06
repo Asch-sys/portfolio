@@ -242,7 +242,7 @@
     let currentIndex = 0;
 
     function changeVideo() {
-      const videoPath = `../epured-version-webm/${videoFiles[currentIndex]}`;
+      const videoPath = `${videoFiles[currentIndex]}`;
       videoElement.src = videoPath;
       currentIndex = (currentIndex + 1) % videoFiles.length;
     }
