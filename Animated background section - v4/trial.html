@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+        }
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <video id="bgVideo" autoplay loop muted playsinline></video>
+
+    <script>
+        const videos = [
+            "../../Animated-background-video/Version-webm/1.webm",
+            "../../Animated-background-video/Version-webm/2.webm",
+            "../../Animated-background-video/Version-webm/3.webm",
+            "../../Animated-background-video/Version-webm/4.webm",
+            "../../Animated-background-video/Version-webm/5.webm",
+            "../../Animated-background-video/Version-webm/6.webm",
+            "../../Animated-background-video/Version-webm/7.webm",
+            "../../Animated-background-video/Version-webm/8.webm",
+            "../../Animated-background-video/Version-webm/9.webm",
+            "../../Animated-background-video/Version-webm/10.webm",
+            "../../Animated-background-video/Version-webm/11.webm",
+            "../../Animated-background-video/Version-webm/12.webm",
+            "../../Animated-background-video/Version-webm/13.webm",
+            "../../Animated-background-video/Version-webm/14.webm",
+            "../../Animated-background-video/Version-webm/15.webm",
+            "../../Animated-background-video/Version-webm/16.webm",
+            "../../Animated-background-video/Version-webm/17.webm",
+            "../../Animated-background-video/Version-webm/18.webm",
+            "../../Animated-background-video/Version-webm/19.webm",
+            "../../Animated-background-video/Version-webm/20.webm",
+            "../../Animated-background-video/Version-webm/21.webm",
+            "../../Animated-background-video/Version-webm/22.webm",
+            "../../Animated-background-video/Version-webm/23.webm",
+            "../../Animated-background-video/Version-webm/24.webm",
+            "../../Animated-background-video/Version-webm/25.webm",
+            "../../Animated-background-video/Version-webm/26.webm",
+            "../../Animated-background-video/Version-webm/27.webm",
+            "../../Animated-background-video/Version-webm/28.webm",
+            "../../Animated-background-video/Version-webm/29.webm",
+            "../../Animated-background-video/Version-webm/30.webm",
+            "../../Animated-background-video/Version-webm/31.webm",
+            "../../Animated-background-video/Version-webm/32.webm",
+            "../../Animated-background-video/Version-webm/33.webm",
+            "../../Animated-background-video/Version-webm/34.webm",
+            "../../Animated-background-video/Version-webm/35.webm",
+            "../../Animated-background-video/Version-webm/36.webm",
+            "../../Animated-background-video/Version-webm/37.webm",
+            "../../Animated-background-video/Version-webm/38.webm",
+            "../../Animated-background-video/Version-webm/39.webm",
+            "../../Animated-background-video/Version-webm/40.webm",
+            "../../Animated-background-video/Version-webm/41.webm",
+            "../../Animated-background-video/Version-webm/42.webm",
+            "../../Animated-background-video/Version-webm/43.webm",
+            "../../Animated-background-video/Version-webm/44.webm",
+            "../../Animated-background-video/Version-webm/45.webm"
+        ];
+
+        const videoElement = document.getElementById('bgVideo');
+        let currentVideoIndex = 0;
+
+        function playNextVideo() {
+            currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+            videoElement.src = videos[currentVideoIndex];
+            videoElement.play();
+        }
+
+        videoElement.src = videos[0];
+        videoElement.play();
+        setInterval(playNextVideo, 5000);
+    </script>
+</body>
+</html>
